@@ -1,0 +1,23 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.setup(width=450, height=450)  # Set the window size to 450x450
+screen.title("Turtle Draw Window")  # Optional: Set the title of the window
+
+# Create the turtle
+t = turtle.Turtle()
+
+# Set turtle speed to the maximum (fastest)
+t.speed(0)
+
+# Optional: Example drawing (to show that the turtle is working)
+for _ in range(36):
+    t.forward(100)
+    t.left(170)
+
+# Hide the turtle after drawing is complete
+t.hideturtle()
+
+# Keep the window open until clicked
+screen.exitonclick()
